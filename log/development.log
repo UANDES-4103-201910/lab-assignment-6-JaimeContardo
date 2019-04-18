@@ -1412,3 +1412,801 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 09:49:33 -0400
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (419.1ms)
+Completed 200 OK in 4701ms (Views: 4540.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 09:49:48 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (193.0ms)
+Completed 200 OK in 296ms (Views: 262.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 09:50:08 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"emrO9crWj0SlP2/aSSstBePKGc9Vsd5lnYu67SdjLRVXlX6HduF65F6Q8kBT5Q+99ZHxSE73GSGPsBBYYSVy+Q==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 215ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 09:53:11 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-04-17 09:53:13 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 149ms (Views: 144.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 09:53:16 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 09:54:40 -0400
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 461ms (Views: 449.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 09:54:44 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sign_in" for ::1 at 2019-04-17 10:00:58 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (737.1ms)
+Completed 200 OK in 923ms (Views: 916.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:01:10 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z0sL/WRrkvzQ17cq0TwdsFW7SYsiWD7XZjIpp0HUCDYJCGLPoixsy7WXnVhQ5H+wA2Rd59TIszIcDl6zTX1Xdw==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 385ms (ActiveRecord: 1.2ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:54)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 10:02:18 -0400
+Started GET "/" for ::1 at 2019-04-17 10:02:18 -0400
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (44.2ms)
+  Rendered sessions/new.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 704ms (Views: 689.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 717ms (Views: 692.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:02:22 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (306.1ms)
+Completed 200 OK in 390ms (Views: 337.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:02:32 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5uqeozWS5EaHE8EUmKxZZRm/PvuL7XvCgpSgk0a/mnTLFS7RiaUR5ny8XI6CYnvdD+TWfJCrvIaQrwomAPnFmA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 245ms (ActiveRecord: 1.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 10:05:10 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 390ms (Views: 378.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:05:14 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (61.8ms)
+Completed 200 OK in 111ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:05:20 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zNFQbztXXezxJuRpuG61M63ObYf6iI8DYZ3NotGWQDfhLuAdh2CoTAqJefOioJeLu5WFAOHOSEdzpmcXl9Af2w==", "registrations"=>{"name"=>"JAime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 262ms (ActiveRecord: 0.8ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 10:07:43 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 381ms (Views: 369.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:07:46 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 111ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:07:49 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BQmsQcAb8HdUXG0JRXGiEIvKn0sRhZ4Y4ncITBbad/Qo9hwzfCwF16/z8JNfv4ConZF3zArDWVzwTKL5UJwoGA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/registrations_controller.rb:7:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 10:17:28 -0400
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 482ms (Views: 470.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:17:32 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 100ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:17:38 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88YupdCl0JhN3ShoWy9obrK0yT4rltTD9+ldq7EJolTeOZ7XbJIlOLZytfJB4UrWpO8huTDQE4fl0vce90/9uA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 10:17:57 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88YupdCl0JhN3ShoWy9obrK0yT4rltTD9+ldq7EJolTeOZ7XbJIlOLZytfJB4UrWpO8huTDQE4fl0vce90/9uA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/registrations_controller.rb:14:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 10:20:39 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88YupdCl0JhN3ShoWy9obrK0yT4rltTD9+ldq7EJolTeOZ7XbJIlOLZytfJB4UrWpO8huTDQE4fl0vce90/9uA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: RegistrationsController):
+  
+app/controllers/registrations_controller.rb:14:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 10:21:05 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88YupdCl0JhN3ShoWy9obrK0yT4rltTD9+ldq7EJolTeOZ7XbJIlOLZytfJB4UrWpO8huTDQE4fl0vce90/9uA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameter: :last_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `lastname' for #<User:0x00007fb8fb029ea8>
+Did you mean?  last_name
+               last_name=
+               last_name?):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 10:22:12 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88YupdCl0JhN3ShoWy9obrK0yT4rltTD9+ldq7EJolTeOZ7XbJIlOLZytfJB4UrWpO8huTDQE4fl0vce90/9uA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 99ms (ActiveRecord: 10.1ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 10:24:22 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 485ms (Views: 418.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-17 10:24:23 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:24:25 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:24:29 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M9dAR8DB2F4poDQ9DCuDpQi07rrdc+wz3FCyemqXq4QeKPA1fPYt/tIPqacW5aEdHu8GPcY1K3fOaxjPLNH0aA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (29.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 37ms (ActiveRecord: 29.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 10:32:44 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 316ms (Views: 302.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:33:06 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rzR3NcTzG2z18Rz/nbLuMb5st8ANqizQ2j60S7lnSIU/7juEVQyWtaX7gF/rqm4kCams/amJVY5VI3FIkzCYw==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"jcontardo@miuandes.cl", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (18.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 23ms (ActiveRecord: 18.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 10:43:38 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rzR3NcTzG2z18Rz/nbLuMb5st8ANqizQ2j60S7lnSIU/7juEVQyWtaX7gF/rqm4kCams/amJVY5VI3FIkzCYw==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"jcontardo@miuandes.cl", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 91ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 10:43:45 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:6: dynamic constant assignment
+...ationSettings ErrorDisplayMode="ImageWithTooltip" );@output_...
+...                              ^):
+  
+app/views/registrations/new.html.erb:6: dynamic constant assignment
+Started GET "/" for ::1 at 2019-04-17 10:43:46 -0400
+Processing by SessionsController#new as HTML
+Started GET "/" for ::1 at 2019-04-17 10:43:47 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 442ms (Views: 425.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 436ms (Views: 429.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:43:48 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:6: dynamic constant assignment
+...ationSettings ErrorDisplayMode="ImageWithTooltip" );@output_...
+...                              ^):
+  
+app/views/registrations/new.html.erb:6: dynamic constant assignment
+Started GET "/sign_in" for ::1 at 2019-04-17 10:47:43 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 887ms (Views: 877.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:47:55 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fzw4i0lATcl+EW7D5t6LSIOhxhkO13bvtmrQkj0+k7m5f1G5jwez/htRRLFnBulI1X7SdfhH+wrMVqeGMZfM+A==", "registrations"=>{"name"=>"", "last_name"=>"sda", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (62.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 80ms (ActiveRecord: 63.1ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 10:54:16 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 512ms (Views: 482.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-17 10:54:17 -0400
+Started GET "/sign_in" for ::1 at 2019-04-17 10:54:17 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-17 10:54:17 -0400
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 76ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:54:29 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D3smGrtUPjYAZYFXkm/fm27aGadgjlVeEBC/Urm9Fq8ihJZoB2PLlvvKHM2Iof0jeIHxIHvIkhoCKxXn//tJQw==", "registrations"=>{"name"=>"Jaime", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (3.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 93ms (ActiveRecord: 5.1ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 10:56:03 -0400
+Started GET "/sign_in" for ::1 at 2019-04-17 10:56:03 -0400
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (51.9ms)
+  Rendered registrations/new.html.erb within layouts/application (341.3ms)
+Completed 200 OK in 993ms (Views: 984.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1004ms (Views: 985.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:56:09 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qPHMGoSqcI7j11PaY8bEkBrVzdyY/rGpxWYg4lAhnWyFDnxoOJ2FLhh4zkB5COYoDI4lW4O4du3XXYpXFmfCgA==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 74ms (ActiveRecord: 10.4ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:20 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-04-17 10:57:21 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 55ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:23 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:39 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:47 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-04-17 10:57:49 -0400
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 97ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sign_in" for ::1 at 2019-04-17 10:57:50 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sign_in" for ::1 at 2019-04-17 10:58:05 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 70ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 10:58:09 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rdn97WJR4Z+AZxbvUUkJabKWTWkRy+dVPr5qOBMMybtrmpTfpBYfqOUnPJ3QkWtp5ElZBedbarBEgh0sH6WW+g==", "registrations"=>{"name"=>"J", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (20.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 100ms (ActiveRecord: 21.9ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 11:11:56 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rdn97WJR4Z+AZxbvUUkJabKWTWkRy+dVPr5qOBMMybtrmpTfpBYfqOUnPJ3QkWtp5ElZBedbarBEgh0sH6WW+g==", "registrations"=>{"name"=>"J", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 11:12:04 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 341ms (Views: 293.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 11:12:10 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Rje1RS2ZxW5eXkPE94cjAHzf3T3hGnlrMnCBRoKC3QnW7fn0vGZItw5U32SBn6MVyxrGAEU5ADW9bURFqNUNQ==", "registrations"=>{"name"=>"J", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 14ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 11:12:25 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sign_in" for ::1 at 2019-04-17 11:12:32 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2019-04-17 11:12:33 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 315ms (Views: 295.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 11:12:35 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sign_in" for ::1 at 2019-04-17 11:13:07 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/lab-assignment-6-JaimeContardo/app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/registrations/new.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sign_in" for ::1 at 2019-04-17 11:13:22 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 122ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 11:18:29 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 80ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 11:18:42 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MjQZYHOBs7vh6o75KHLmIQ0rkp0/cuIgrv+6L3rP3en0d3BStcZNjISqpIupqoQhW/SG8cnib8XUw807dmaCqA==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 93ms (ActiveRecord: 11.4ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /Users/jaimecontardo/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for ::1 at 2019-04-17 11:19:24 -0400
+Started GET "/sign_in" for ::1 at 2019-04-17 11:19:24 -0400
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (44.6ms)
+  Rendered registrations/new.html.erb within layouts/application (240.2ms)
+Completed 200 OK in 751ms (Views: 727.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 733ms (Views: 728.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-04-17 11:19:46 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 59ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 11:25:25 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Q24qxdURKngbPJS4LDKdYF7EDOO953u8+L9z3VVNBL88gjZq2OxCRvDb8j6fujNlyD4tJWxWqrh2Vd6MxNr/g==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 112ms (ActiveRecord: 10.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for ::1 at 2019-04-17 11:33:14 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Q24qxdURKngbPJS4LDKdYF7EDOO953u8+L9z3VVNBL88gjZq2OxCRvDb8j6fujNlyD4tJWxWqrh2Vd6MxNr/g==", "registrations"=>{"name"=>"Jaime", "last_name"=>"Contardo", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 87ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for ::1 at 2019-04-17 11:33:18 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 444ms (Views: 390.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2019-04-17 11:33:21 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+DPRmQ90QklQrxGR9CRr+QmAfdgvRxJ9HIxzuNRyLDRo6Z0onovPkACljTGCPOvsvkVm5YtkayOTkba7/iX8Q==", "registrations"=>{"name"=>"Ja", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Last name can't be blank, Email can't be blank, Email is invalid, Password can't be blank, Password Password must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'

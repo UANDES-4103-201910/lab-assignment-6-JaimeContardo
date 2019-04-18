@@ -4,6 +4,13 @@ class RegistrationsController < ApplicationController
 	end
 
 	def create
-	    #complete this method
+	    @user=User.create!(create_params)
+	    redirect_to user
+	end
+
+	private
+
+	def create_params
+		params.require(:registrations).permit(:name, :last_name, :email, :phone, :password)
 	end
 end

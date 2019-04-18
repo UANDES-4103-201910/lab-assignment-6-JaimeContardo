@@ -25,13 +25,29 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    #complete this method
+      @user=User.create!(user_params)
+      redirect_to user
+      if user.save
+        flash[:notice] = "User successfully created"
+      else 
+        flash.now[:error] = "Could not save client"
+        render action: "new"
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    #complete this method
+    respond_to do |format|
+
+      if @user.update(user_params)
+        format.html { redirect_to @user, notice: 'User updated'}
+        format.json { render :show, status: :ok, location: @user}
+      else
+        format.html { render :edit}
+        format.json { render json:  @user.errors,status: :unprocessable_entity }
+
+      end
+    end
   end
 
   # DELETE /users/1
